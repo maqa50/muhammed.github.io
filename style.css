@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+#Welcome{
+    color: red;
+    text-align: center;
+}
+#Services{
+    color: red;
+    /* text-align: center; */
+}
+.odd{
+    color: white;
+    text-decoration: dotted;
+}
