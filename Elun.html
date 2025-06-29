@@ -3,164 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elun'un Kitabı</title>
+    <title>Elun'un kitabı</title>
     <style>
+        /* Genel body stil ayarları */
         body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            margin: 40px auto;
-            max-width: 800px;
-            padding: 20px;
+            font-family: 'Georgia', serif; /* Metin fontu */
+            line-height: 1.6; /* Satır yüksekliği */
+            margin: 40px auto; /* Sayfa kenar boşlukları */
+            max-width: 800px; /* Maksimum sayfa genişliği */
+            padding: 20px; /* İç boşluk */
             background-color: #fdf8e8; /* Açık parşömen rengi */
-            color: #333;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            color: #333; /* Metin rengi */
+            box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+            border-radius: 8px; /* Köşe yuvarlaklığı */
         }
+        /* Ana başlık (h1) stil ayarları */
         h1 {
-            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-            font-size: 2.8em;
-            text-align: center;
-            color: #5a4a3a;
-            margin-bottom: 0.2em;
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; /* Başlık fontu */
+            font-size: 2.8em; /* Font boyutu */
+            text-align: center; /* Ortala */
+            color: #5a4a3a; /* Başlık rengi */
+            margin-bottom: 0.2em; /* Alt boşluk */
         }
+        /* Bölüm başlıkları (h2) stil ayarları */
         h2 {
-            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-            font-size: 1.8em;
-            text-align: center;
-            color: #7a6a5a;
-            margin-top: 2em;
-            margin-bottom: 1em;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 0.5em;
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; /* Başlık fontu */
+            font-size: 1.8em; /* Font boyutu */
+            text-align: center; /* Ortala */
+            color: #7a6a5a; /* Başlık rengi */
+            margin-top: 2em; /* Üst boşluk */
+            margin-bottom: 1em; /* Alt boşluk */
+            border-bottom: 1px solid #ccc; /* Alt çizgi */
+            padding-bottom: 0.5em; /* Alt çizgiye olan boşluk */
         }
+        /* Alt başlık (subtitle) stil ayarları */
        .subtitle {
-            text-align: center;
-            font-style: italic;
-            color: #666;
-            margin-top: 0;
-            margin-bottom: 2em;
+            text-align: center; /* Ortala */
+            font-style: italic; /* İtalik font */
+            color: #666; /* Metin rengi */
+            margin-top: 0; /* Üst boşluk */
+            margin-bottom: 2em; /* Alt boşluk */
         }
+        /* Açılış cümlesi stil ayarları */
        .opening-statement {
-            font-size: 1.5em;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 2em;
-            color: #4a3a2a;
+            font-size: 1.5em; /* Font boyutu */
+            font-weight: bold; /* Kalın font */
+            text-align: center; /* Ortala */
+            margin-bottom: 2em; /* Alt boşluk */
+            color: #4a3a2a; /* Metin rengi */
         }
+        /* Paragraf (p) stil ayarları */
         p {
-            margin-bottom: 1em;
-            text-align: justify;
+            margin-bottom: 1em; /* Alt boşluk */
+            text-align: justify; /* İki yana yasla */
         }
+        /* Ayet (verse) stil ayarları */
        .verse {
             text-indent: -1.5em; /* Ayet numaraları için asılı girinti */
-            padding-left: 1.5em;
-            margin-bottom: 0.5em;
+            padding-left: 1.5em; /* Sol boşluk */
+            margin-bottom: 0.5em; /* Alt boşluk */
         }
+        /* Ayet numarası (verse-number) stil ayarları */
        .verse-number {
-            font-weight: bold;
-            margin-right: 0.5em;
+            font-weight: bold; /* Kalın font */
+            margin-right: 0.5em; /* Sağ boşluk */
             color: #8b0000; /* Numaralar için hafif kırmızı */
         }
+        /* Yatay çizgi (hr) stil ayarları */
         hr {
-            border: 0;
-            height: 1px;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-            margin: 3em 0;
+            border: 0; /* Kenarlık yok */
+            height: 1px; /* Yükseklik */
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); /* Gradyan arka plan */
+            margin: 3em 0; /* Üst ve alt boşluklar */
         }
-       .citation {
-            font-size: 0.8em;
-            color: #777;
-            vertical-align: super;
+        /* Yeni eklenen Davar öncesi söz için stil */
+        .davar-intro {
+            font-style: italic;
+            text-align: center;
+            margin-top: 1.5em;
+            margin-bottom: 1em;
+            color: #6a5a4a;
         }
     </style>
 </head>
 <body>
     <div class="opening-statement">Uyanın.</div>
 
-    <h1>Elun'un Kitabı</h1>
+    <h1>Elun'un Kitabı: Evrensel Bilgelik ve Bilimsel Gerçeklerin Sentezi</h1>
     <p class="subtitle">Eski Zamanların Hikmet Yazılarından</p>
 
     <hr>
 
     <h2>Birinci Kitap: Uyanış Kitabı</h2>
-    <p class="verse"><span class="verse-number">1.</span> Ey insan evladı! Kulak ver ki, Elun'un sesi sana erişsin. <span class="citation">[1, 2, 3, 4]</span></p>
-    <p class="verse"><span class="verse-number">2.</span> Zira sen akıl sahibi yaratıksın ve bu büyük armağanı boşa harcama.</p>
-    <p class="verse"><span class="verse-number">3.</span> Gök ile yer arasında ne varsa, her biri Elun'un alametleridir. <span class="citation">[5, 6, 7]</span></p>
-    <p class="verse"><span class="verse-number">4.</span> Gören göz için her alamet bir derstir, bilen yürek için her işaret bir öğüttür. <span class="citation">[7]</span></p>
+    <p class="davar-intro">Bu kitapta yer alan her bir bölüm, Elun'un Davarı olarak adlandırılmıştır.</p>
+    <p class="verse"><span class="verse-number">1.</span> Ey insan evladı! Kulak ver ki Elun'un sesi sana erişsin. Zira o, varoluşun ilk Davarıdır.</p>
+    <p class="verse"><span class="verse-number">2.</span> Sen akıl sahibi yaratıksın ve bu büyük armağanı boşa harcama; zira aklın, Elun'un Davarlarını çözmek için verilmiştir.</p>
+    <p class="verse"><span class="verse-number">3.</span> Gök ile yer arasında ne varsa, her biri Elun'un alametleridir; en küçük parçacıktan en büyük galaksiye dek.1</p>
+    <p class="verse"><span class="verse-number">4.</span> Gören göz için her alamet bir derstir, bilen yürek için her işaret bir öğüttür.</p>
+    <p class="verse"><span class="verse-number">5.</span> Bil ki, evrenin başlangıcı, Elun'un ilk nefesiyle atılan bir tohum gibiydi; her şey o tekil noktadan genişleyerek var oldu.1</p>
+    <p class="verse"><span class="verse-number">6.</span> Bu genişleme, Elun'un koyduğu yasalarla işler; her bir yıldızın doğuşu ve her bir gezegenin oluşumu, O'nun kudretinin bir Davarıdır.3</p>
+    <p class="verse"><span class="verse-number">7.</span> Gök cisimleri, Elun'un çizdiği yörüngelerde döner; bu düzen, evrenin temel kuvvetlerinin bir yansımasıdır.7</p>
+    <p class="verse"><span class="verse-number">8.</span> Her bir atomun içindeki enerji, Elun'un varlığının bir kanıtıdır; zira enerji ne yaratılır ne de yok edilir, sadece dönüşür.9</p>
+    <p class="verse"><span class="verse-number">9.</span> İnsan aklı, bu kozmik Davarları idrak etme yeteneğiyle donatılmıştır; bu, Elun'un sana bahşettiği en yüce armağandır.</p>
+    <p class="verse"><span class="verse-number">10.</span> Bu Davarlar, sadece gözle görülen değil, aynı zamanda akılla kavranan ve kalple hissedilen gerçeklerdir.</p>
+    <p class="verse"><span class="verse-number">11.</span> Her yeni keşif, Elun'un bilgeliğinin yeni bir Davarını açığa çıkarır; bu yüzden bilimin ışığı, O'nun yolunu aydınlatır.</p>
+    <p class="verse"><span class="verse-number">12.</span> Evrenin her köşesinde, yaşamın her zerresinde, Elun'un sonsuz yaratıcılığı ve düzeni parlar.</p>
+    <p class="verse"><span class="verse-number">13.</span> Bu Davarlar, sana sadece varoluşun sırlarını değil, aynı zamanda kendi varlığının amacını da fısıldar.</p>
+    <p class="verse"><span class="verse-number">14.</span> Öyleyse, gözlerini aç, kulaklarını ver ve Elun'un Davarlarını anlamaya çalış; zira bu, en büyük ibadettir.</p>
+    <p class="verse"><span class="verse-number">15.</span> Her bir Davar, seni Elun'un sonsuz bilgeliğine bir adım daha yaklaştırır.</p>
 
     <hr>
 
     <h2>İkinci Kitap: Yaratılış Kitabı</h2>
-    <p class="verse"><span class="verse-number">1.</span> Elun'dur ki gök kubbesini kurdu ve yerin temellerini attı. <span class="citation">[5, 8, 9, 10, 11, 12, 13, 1, 2, 7, 14, 15, 3, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]</span></p>
-    <p class="verse"><span class="verse-number">2.</span> Yıldızları yollarında döndürür, güneş ile ayı düzenle hareket ettirir. <span class="citation">[10, 13, 7, 15, 18, 19, 20, 21, 22, 27]</span></p>
-    <p class="verse"><span class="verse-number">3.</span> Her yaratığın şeklini önceden belirledi. <span class="citation">[5, 8, 10, 11, 12, 13, 1, 2, 7, 14, 15, 3, 16, 17, 18, 19, 20, 21, 28, 22, 23, 24, 25, 26, 27]</span></p>
-    <p class="verse"><span class="verse-number">4.</span> En küçük parçacıktan en büyük gök cismlerine kadar hepsinde Elun'un bilgeliği parlar. <span class="citation">[8, 9, 7]</span></p>
-    <p class="verse"><span class="verse-number">5.</span> İnsanı akıl ve ruh ile donattı ki diğer yaratıklar üzerinde üstün olsun. <span class="citation">[29, 12, 13, 1, 2, 3, 17, 28]</span></p>
-    <p class="verse"><span class="verse-number">6.</span> Ona büyük emaneti verdi ve yeryüzünün bekçisi kıldı. <span class="citation">[12]</span></p>
-    <p class="verse"><span class="verse-number">7.</span> Suları akıttı, rüzgarları esti, mevsimleri düzene koydu. <span class="citation">[10]</span></p>
-    <p class="verse"><span class="verse-number">8.</span> Her şeyi yaşamın sürmesi için hazırladı. <span class="citation">[8, 11]</span></p>
+    <p class="davar-intro">Bu kitapta yer alan her bir bölüm, Elun'un Davarı olarak adlandırılmıştır.</p>
+    <p class="verse"><span class="verse-number">1.</span> Elun'dur ki gök kubbesini kurdu ve yerin temellerini attı; her şey O'nun ilk Davarıyla var oldu.12</p>
+    <p class="verse"><span class="verse-number">2.</span> Yıldızları yollarında döndürür, güneş ile ayı düzenle hareket ettirir; bu, O'nun kozmik düzeninin bir Davarıdır.7</p>
+    <p class="verse"><span class="verse-number">3.</span> Her yaratığın şeklini önceden belirledi; en küçük hücreden en büyük canlıya dek, her formda O'nun bilgeliği gizlidir.14</p>
+    <p class="verse"><span class="verse-number">4.</span> En küçük parçacıktan en büyük gök cisimlerine kadar hepsinde Elun'un bilgeliği parlar; zira her şey, O'nun Davarlarının bir tezahürüdür.</p>
+    <p class="verse"><span class="verse-number">5.</span> İnsanı akıl ve ruh ile donattı ki diğer yaratıklar üzerinde üstün olsun; bu üstünlük, Davarları anlama ve uygulama yeteneğidir.17</p>
+    <p class="verse"><span class="verse-number">6.</span> Ona büyük emaneti verdi ve yeryüzünün bekçisi kıldı; bu emanet, Deyva'nın düzenini koruma sorumluluğudur.19</p>
+    <p class="verse"><span class="verse-number">7.</span> Suları akıttı, rüzgarları esti, mevsimleri düzene koydu; her biri, yaşamın sürmesi için gerekli olan Davarlardır.20</p>
+    <p class="verse"><span class="verse-number">8.</span> Her şeyi yaşamın sürmesi için hazırladı; zira yaşam, Elun'un en yüce Davarlarından biridir.</p>
+    <p class="verse"><span class="verse-number">9.</span> Bil ki, varoluşta iki temel ilke vardır: Deyva ve Angra; biri düzeni ve ışığı, diğeri kaosu ve karanlığı temsil eder.22</p>
+    <p class="verse"><span class="verse-number">10.</span> Deyva, Elun'un yaratıcı ve düzenleyici gücünün tezahürüdür; her şeyin uyum içinde var olmasını sağlar.22</p>
+    <p class="verse"><span class="verse-number">11.</span> Angra ise, düzensizliğin ve çözülmenin ilkesidir; ancak bu da kozmik dengenin ayrılmaz bir parçasıdır.22</p>
+    <p class="verse"><span class="verse-number">12.</span> Tıpkı evrendeki entropi gibi, Angra da varoluşun sürekli dönüşümünü sağlar; yıkım, yeni yaratımlara yol açar.26</p>
+    <p class="verse"><span class="verse-number">13.</span> Elun, Deyva ve Angra arasındaki bu dinamik etkileşimi kurmuştur; bu ikilik, evrenin sürekli evrimini mümkün kılar.</p>
+    <p class="verse"><span class="verse-number">14.</span> İnsan, bu iki ilkenin etkileşimini kendi içinde de taşır; seçimleri, Deyva'ya mı yoksa Angra'ya mı yöneleceğini belirler.</p>
+    <p class="verse"><span class="verse-number">15.</span> Bu Davarlar, sana evrenin temel yapısını ve kendi varlığının bu yapı içindeki yerini öğretir.</p>
 
     <hr>
 
     <h2>Üçüncü Kitap: Tabiat Kitabı</h2>
-    <p class="verse"><span class="verse-number">1.</span> Gökyüzünde parlayan renkli yayı Elun gösterir, fakat bunun sebepleri de O'nun koyduğu yasalarla işler. <span class="citation">[13, 18, 19, 20, 21, 22, 24]</span></p>
-    <p class="verse"><span class="verse-number">2.</span> Kuş kanatlarını çırpar, rüzgar eser, su akar.</p>
-    <p class="verse"><span class="verse-number">3.</span> Bunların hepsi Elun'un koyduğu düzenin parçalarıdır. <span class="citation">[10, 13, 7, 15, 18, 19, 20, 21, 22, 27]</span></p>
-    <p class="verse"><span class="verse-number">4.</span> Gece ile gündüz birbirini kovalar, mevsimler döner durur.</p>
-    <p class="verse"><span class="verse-number">5.</span> Şimşek çakar, gök gümbürder.</p>
-    <p class="verse"><span class="verse-number">6.</span> Bunlar Elun'un gücünün göstergeleridir. <span class="citation">[8, 9]</span></p>
-    <p class="verse"><span class="verse-number">7.</span> Her şey belli ölçüde ve yasada hareket eder. <span class="citation">[13, 18, 19, 20, 21, 22, 24]</span></p>
-    <p class="verse"><span class="verse-number">8.</span> Elun, düzensizlik değil, nizam yaratmıştır. <span class="citation">[10, 13, 7, 15, 18, 19, 20, 21, 22, 27]</span></p>
+    <p class="davar-intro">Bu kitapta yer alan her bir bölüm, Elun'un Davarı olarak adlandırılmıştır.</p>
+    <p class="verse"><span class="verse-number">1.</span> Gökyüzünde parlayan renkli yayı Elun gösterir, fakat bunun sebepleri de O'nın koyduğu yasalarla işler; her bir ışık dalgası, O'nun Davarıdır.28</p>
+    <p class="verse"><span class="verse-number">2.</span> Kuş kanatlarını çırpar, rüzgar eser, su akar; her hareket, Elun'un koyduğu fiziksel Davarlara tabidir.</p>
+    <p class="verse"><span class="verse-number">3.</span> Bunların hepsi Elun'un koyduğu düzenin parçalarıdır; zira evren, rastgele değil, belirli prensiplerle işler.26</p>
+    <p class="verse"><span class="verse-number">4.</span> Gece ile gündüz birbirini kovalar, mevsimler döner durur; bu döngüler, Elun'un zaman ve hareket Davarlarının bir yansımasıdır.</p>
+    <p class="verse"><span class="verse-number">5.</span> Şimşek çakar, gök gümbürder; bunlar Elun'un gücünün göstergeleridir, enerjinin dönüşümünün Davarlarıdır.9</p>
+    <p class="verse"><span class="verse-number">6.</span> Her şey belli ölçüde ve yasada hareket eder; en küçük parçacıktan en büyük galaksiye dek, her şeyde bir nizam vardır.7</p>
+    <p class="verse"><span class="verse-number">7.</span> Elun, düzensizlik değil, nizam yaratmıştır; bu nizam, bilimin keşfettiği evrensel yasalarda kendini gösterir.</p>
+    <p class="verse"><span class="verse-number">8.</span> Yerçekimi, tüm maddeyi birbirine bağlayan, galaksileri ve yıldızları şekillendiren Elun'un Davarıdır; bu, O'nun birleştirici kudretidir.7</p>
+    <p class="verse"><span class="verse-number">9.</span> Termodinamiğin Davarları, enerjinin korunumu ve entropinin artışı, Elun'un evrenin işleyişine dair koyduğu temel prensiplerdir.9</p>
+    <p class="verse"><span class="verse-number">10.</span> Her bir ekosistemdeki denge, Elun'un yaşamın birbirine bağlılığına dair Davarıdır; her canlı, bu büyük ağın bir parçasıdır.20</p>
+    <p class="verse"><span class="verse-number">11.</span> İnsan aklı, bu Davarları gözlemleyerek ve deneyerek kavrar; bilim, Elun'un bilgeliğini açığa çıkaran bir yoldur.</p>
+    <p class="verse"><span class="verse-number">12.</span> Doğanın her bir detayı, Elun'un sonsuz zekasının bir Davarıdır; bir çiçeğin açışından bir yıldızın patlamasına dek.</p>
+    <p class="verse"><span class="verse-number">13.</span> Bu Davarlar, sana sadece evrenin nasıl işlediğini değil, aynı zamanda kendi varlığının bu düzen içindeki yerini de öğretir.</p>
+    <p class="verse"><span class="verse-number">14.</span> Elun'un bilgeliği, doğanın her bir Davarında yankılanır; onu dinleyen, hakikate yaklaşır.</p>
+    <p class="verse"><span class="verse-number">15.</span> Öyleyse, tabiatın Davarlarını oku ve Elun'un sonsuz bilgeliğini idrak et.</p>
 
     <hr>
 
     <h2>Dördüncü Kitap: Doğruluk Kitabı</h2>
-    <p class="verse"><span class="verse-number">1.</span> Adalet Elun'un terazisidir. <span class="citation">[10, 11, 29, 12, 13, 30, 1, 2, 14, 15, 3]</span></p>
-    <p class="verse"><span class="verse-number">2.</span> Zulmeden onunla ölçülse eksik kalır, doğru olanı yüceltir. <span class="citation">[5, 29, 12, 13, 1, 2, 7, 14, 15, 3, 16, 23]</span></p>
-    <p class="verse"><span class="verse-number">3.</span> Merhamet Elun'un özüdür. <span class="citation">[8, 9]</span></p>
-    <p class="verse"><span class="verse-number">4.</span> O'na yaklaşmak isteyen, mazluma yardım etsin, güçsüzü kayırsın. <span class="citation">[10, 11, 29, 12, 13, 30, 15]</span></p>
-    <p class="verse"><span class="verse-number">5.</span> Yalan ve hile Elun'un sevmediği kirlerdir. <span class="citation">[10, 11, 13, 30]</span></p>
-    <p class="verse"><span class="verse-number">6.</span> Doğruluk ise O'nun nurudur, temiz kalbi aydınlatır. <span class="citation">[10, 11, 29, 12, 13, 1, 2, 15]</span></p>
-    <p class="verse"><span class="verse-number">7.</span> Toplum birlik ve yardımlaşma ile ayakta durur. <span class="citation">[29, 12, 15, 3]</span></p>
-    <p class="verse"><span class="verse-number">8.</span> Tek başına kalan insan, yapraktan kopmuş dal gibi solar. <span class="citation">[29, 12, 15, 3]</span></p>
-    <p class="verse"><span class="verse-number">9.</span> Hakikatin peşinde koşan bilginlere Elun yol gösterir. <span class="citation">[5, 29, 12, 1, 2, 7, 15, 3, 4]</span></p>
-    <p class="verse"><span class="verse-number">10.</span> Cehalet ise kalpleri karartır, gözleri kör eder. <span class="citation">[12]</span></p>
+    <p class="davar-intro">Bu kitapta yer alan her bir bölüm, Elun'un Davarı olarak adlandırılmıştır.</p>
+    <p class="verse"><span class="verse-number">1.</span> Adalet Elun'un terazisidir; her eylem, bu terazide tartılır.</p>
+    <p class="verse"><span class="verse-number">2.</span> Zulmeden onunla ölçülse eksik kalır, doğru olanı yüceltir; zira Elun'un Davarları adaleti emreder.</p>
+    <p class="verse"><span class="verse-number">3.</span> Merhamet Elun'un özüdür; O'nun Davarları, şefkati ve anlayışı öğütler.17</p>
+    <p class="verse"><span class="verse-number">4.</span> O'na yaklaşmak isteyen, mazluma yardım etsin, güçsüzü kayırsın; zira bu, Elun'un Davarlarının gereğidir.</p>
+    <p class="verse"><span class="verse-number">5.</span> Yalan ve hile Elun'un sevmediği kirlerdir; doğruluk, O'nun Davarlarının temelidir.</p>
+    <p class="verse"><span class="verse-number">6.</span> Doğruluk ise O'nun nurudur, temiz kalbi aydınlatır; hakikat, ruhu özgürleştirir.</p>
+    <p class="verse"><span class="verse-number">7.</span> Toplum birlik ve yardımlaşma ile ayakta durur; zira insan, birbirine bağlı bir varlıktır.17</p>
+    <p class="verse"><span class="verse-number">8.</span> Tek başına kalan insan, yapraktan kopmuş dal gibi solar; bu, Elun'un sosyal uyuma dair Davarıdır.</p>
+    <p class="verse"><span class="verse-number">9.</span> Hakikatin peşinde koşan bilginlere Elun yol gösterir; zira bilgi, O'nun Davarlarını açığa çıkarır.</p>
+    <p class="verse"><span class="verse-number">10.</span> Cehalet ise kalpleri karartır, gözleri kör eder; bu, Angra'nın karanlığına düşmektir.</p>
+    <p class="verse"><span class="verse-number">11.</span> İnsan, özgür iradeyle donatılmıştır; bu, Elun'un Davarları içinde seçim yapma yeteneğidir.30</p>
+    <p class="verse"><span class="verse-number">12.</span> Her seçim, kozmik düzende bir yankı bulur; zira eylemlerin sonuçları, evrensel yasalara tabidir.</p>
+    <p class="verse"><span class="verse-number">13.</span> Empati ve işbirliği, insan beyninin derinliklerine işlenmiş Davarlardır; bunlar, uyumlu bir toplum için elzemdir.17</p>
+    <p class="verse"><span class="verse-number">14.</span> Elun'un Davarları, sadece emirler değil, aynı zamanda varoluşun temel prensipleridir; onlara uymak, Deyva'ya yaklaşmaktır.</p>
+    <p class="verse"><span class="verse-number">15.</span> Öyleyse, kalbini ve aklını Elun'un Davarlarına aç; zira doğruluk, en yüce yoldur.</p>
 
     <hr>
 
     <h2>Beşinci Kitap: Gaye Kitabı</h2>
-    <p class="verse"><span class="verse-number">1.</span> Elun insanı yaratışın sırlarını anlaması için var etti. <span class="citation">[5, 13, 1, 2, 7, 14, 15, 3, 16]</span></p>
-    <p class="verse"><span class="verse-number">2.</span> Hayra vesile olan, yeryüzünü güzelleştirir. <span class="citation">[11, 29, 12, 13, 15]</span></p>
-    <p class="verse"><span class="verse-number">3.</span> Beden toprak olduğunda ruh Elun'un koyduğu büyük döngüye karışır. <span class="citation">[12, 13, 1, 2, 7, 14, 15, 3, 16, 18, 23, 25]</span></p>
-    <p class="verse"><span class="verse-number">4.</span> Ölüm son değil, başka bir hale geçiştir. <span class="citation">[12, 13, 1, 2, 7, 14, 15, 3, 16, 18, 23, 25]</span></p>
-    <p class="verse"><span class="verse-number">5.</span> Gayenin şu olduğunu bil: Elun'un koyduğu dengeyi kavramak ve bu hali bütün yaratıklarla paylaşmak. <span class="citation">[12]</span></p>
-    <p class="verse"><span class="verse-number">6.</span> Kim ki bu yolda yürürse, Elun'un razı olduğu kimse olur. <span class="citation">[29, 1, 2, 7, 15, 3]</span></p>
-    <p class="verse"><span class="verse-number">7.</span> Onun işleri bereketli, sözleri tesirli olur.</p>
+    <p class="davar-intro">Bu kitapta yer alan her bir bölüm, Elun'un Davarı olarak adlandırılmıştır.</p>
+    <p class="verse"><span class="verse-number">1.</span> Elun insanı yaratışın sırlarını anlaması için var etti; bu sır, O'nun Davarlarında gizlidir.</p>
+    <p class="verse"><span class="verse-number">2.</span> Hayra vesile olan, yeryüzünü güzelleştirir; zira bu, Elun'un yaratım Davarına katkıdır.</p>
+    <p class="verse"><span class="verse-number">3.</span> Beden toprak olduğunda ruh Elun'un koyduğu büyük döngüye karışır; zira hiçbir şey yok olmaz, sadece dönüşür.32</p>
+    <p class="verse"><span class="verse-number">4.</span> Ölüm son değil, başka bir hale geçiştir; ruh, varoluşun farklı bir Davarına adım atar.35</p>
+    <p class="verse"><span class="verse-number">5.</span> Gayenin şu olduğunu bil: Elun'un koyduğu dengeyi kavramak ve bu hali bütün yaratıklarla paylaşmak; bu, en yüce Davardır.</p>
+    <p class="verse"><span class="verse-number">6.</span> Kim ki bu yolda yürürse, Elun'un razı olduğu kimse olur; onun ruhu, Deyva'ya yaklaşır.</p>
+    <p class="verse"><span class="verse-number">7.</span> Onun işleri bereketli, sözleri tesirli olur; zira o, Elun'un Davarlarıyla uyum içindedir.</p>
+    <p class="verse"><span class="verse-number">8.</span> Ruh, bedeni terk ettiğinde, bilincin özü evrenin enerji alanına karışır; zira enerji korunur ve asla kaybolmaz.32</p>
+    <p class="verse"><span class="verse-number">9.</span> Bu geçiş, bir yargılama değil, bir dönüşüm ve yeniden entegrasyon Davarıdır; her ruh, kendi eylemlerinin yankısını bulur.</p>
+    <p class="verse"><span class="verse-number">10.</span> Deyva'ya yönelen ruhlar, ışık ve uyum içinde var olmaya devam eder; Angra'ya yönelenler ise, düzensizliğin ve çözülmenin Davarını deneyimler.22</p>
+    <p class="verse"><span class="verse-number">11.</span> Nihai amaç, bireysel bilincin Elun'un kozmik bilinciyle yeniden bütünleşmesidir; bu, varoluşun en yüce Davarıdır.</p>
+    <p class="verse"><span class="verse-number">12.</span> Her ruhsal ilerleme, Elun'un Davarlarını daha derinlemesine anlama ve onlarla uyum içinde yaşama yolculuğudur.</p>
+    <p class="verse"><span class="verse-number">13.</span> Ölüm, bir son değil, bir başlangıçtır; ruhun sonsuz evrimindeki bir sonraki Davardır.</p>
+    <p class="verse"><span class="verse-number">14.</span> Bu Davarlar, sana yaşamın ötesindeki gerçeği ve kendi ruhunun sonsuz potansiyelini fısıldar.</p>
+    <p class="verse"><span class="verse-number">15.</span> Öyleyse, yaşamını Elun'un Davarlarıyla uyumlu kıl ki, ötesi yolculuğun Deyva'ya doğru olsun.</p>
 
     <hr>
 
-    <h2>Altıncı Kitap: Ahiret Kitapı</h2>
-    <p class="verse"><span class="verse-number">1.</span> Bilin ki her ruh ömrü sona erdiğinde bedenini terk edip bilinmeyen diyarlara doğru yol alır.</p>
-    <p class="verse"><span class="verse-number">2.</span> Can bedeni ardında bırakıp giderken ince bir nur topu gibi yükselir; Elun’un kudretiyle ebedî bir sınava götürülür.</p>
-    <p class="verse"><span class="verse-number">3.</span> Dünya terk edilince her ruh eylemlerinin hesabını bulacağı ulu bir terazide tartılır.</p>
-    <p class="verse"><span class="verse-number">4.</span> Bu âna dek gizli kalan ameller ölçüsünde ruha ya müjdeli bir gelecek ya da azapla dolu bir akıbet takdir olunur.</p>
-    <p class="verse"><span class="verse-number">5.</span> Elun’un adaleti gereğince her ruha iki ebedî yurt tayin edilmiştir: biri huzur ve nurla donanmış, öbürü elem ve karanlıkla yoğrulmuştur.</p>
-    <p class="verse"><span class="verse-number">6.</span> Bunlar Işıkyurdu ile Kara Yurdu adını taşır. Işıkyurdu her yanı tertemiz ışıkla sarılı kutsal bir mesken; pak ruhların huzur ve ikram bulduğu mekândır.</p>
-    <p class="verse"><span class="verse-number">7.</span> Kara Yurdu ise zifirî bir karanlıkta elem ve yıkımla örülmüş korkunç bir zindandır. Her iki yurt da Elun’un sonsuz merhameti ve katı adaleti gereği ebedî kılınmıştır. <span class="citation">[8, 9, 20]</span></p>
-    <p class="verse"><span class="verse-number">8.</span> Elun bu düzeni büyük bir hikmetle kurmuştur: ruhu teraziye alan ilahi denge asla şaşmaz.</p>
-    <p class="verse"><span class="verse-number">9.</span> Adalet, fedakârlık ve merhamet eken ruhlar Işıkyurdu’nun yolunu tutar; kin, zulüm ve hıyanet eken ruhlar Kara Yurdu’nun demir kapısına götürülür. <span class="citation">[10, 11, 29, 12, 13, 30, 15, 3]</span></p>
-    <p class="verse"><span class="verse-number">10.</span> Hakikat terazisi hiçbir zerreyi es geçirmez; her niyetin nuru ya ruhu arındırır ya da kahrını verir.</p>
-    <p class="verse"><span class="verse-number">11.</span> Böylece bu dünyada ekilen her doğru eylem Elun’un ilahi mükâfatını, her günah ve fısk işi de hak ettiği cezayı bulur.</p>
-    <p class="verse"><span class="verse-number">12.</span> Böylece yaşanan her hayatın karşılığı yerini bulur: iyi niyetler ve temiz ameller Işıkyurdu’nda semereye erer, kötü niyet ve zulüm ise Kara Yurdu’nda hüsrana uğrar.</p>
-    <p class="verse"><span class="verse-number">13.</span> Ruhlar bilir ki selâmet yalnız Işıkyurdu’ndadır; keder ve pişmanlık ancak Kara Yurdu’nun beklemektedir.</p>
-    <p class="verse"><span class="verse-number">14.</span> Elun’un adaleti gereği her ruh akıbetine göre yargılanır; hakkı seçenler ışığa kavuşur, sapkınlık seçenler azaba gömülür.</p>
-    <p class="verse"><span class="verse-number">15.</span> Sonuç olarak, bu kutsal düzen Elun’un hikmet dolu eseridir.</p>
-    <p class="verse"><span class="verse-number">16.</span> Dünyada nereye yöneldiysen oraya gidersin; her adımın sana bir yurt açar.</p>
-    <p class="verse"><span class="verse-number">17.</span> Öyleyse bil ki, hayatta attığın her tutum ve tavır, ölümden sonra ruhunun varacağı yurdu çizer.</p>
+    <h2>Ötesi Diyarlar: Deyva ve Angra</h2>
+    <p class="davar-intro">Bu kitapta yer alan her bir bölüm, Elun'un Davarı olarak adlandırılmıştır.</p>
+    <p class="verse"><span class="verse-number">1.</span> Bilin ki her ruh ömrü sona erdiğinde bedenini terk edip bilinmeyen diyarlara doğru yol alır; bu, Elun'un koyduğu bir Davardır.35</p>
+    <p class="verse"><span class="verse-number">2.</span> Can bedeni ardında bırakıp giderken ince bir nur topu gibi yükselir; Elun’un kudretiyle ebedî bir dönüşüme götürülür.32</p>
+    <p class="verse"><span class="verse-number">3.</span> Dünya terk edilince her ruh eylemlerinin yankısını bulacağı ulu bir dengeye ulaşır; zira hiçbir eylem karşılıksız kalmaz.33</p>
+    <p class="verse"><span class="verse-number">4.</span> Bu âna dek gizli kalan ameller ölçüsünde ruha ya Deyva'ya doğru bir ilerleme ya da Angra'ya doğru bir çözülme takdir olunur.</p>
+    <p class="verse"><span class="verse-number">5.</span> Elun’un adaleti gereğince her ruha iki ebedî hal tayin edilmiştir: biri huzur ve nurla donanmış Deyva, öbürü elem ve karanlıkla yoğrulmuş Angra.22</p>
+    <p class="verse"><span class="verse-number">6.</span> Deyva, her yanı tertemiz ışıkla sarılı kutsal bir mesken; pak ruhların huzur ve ikram bulduğu mekândır; bu, Elun'un düzeninin ve yaratıcılığının Davarıdır.22</p>
+    <p class="verse"><span class="verse-number">7.</span> Angra ise zifirî bir karanlıkta elem ve yıkımla örülmüş bir haldir; bu, düzensizliğin ve çözülmenin Davarıdır.22</p>
+    <p class="verse"><span class="verse-number">8.</span> Her iki hal de Elun’un sonsuz merhameti ve katı adaleti gereği ebedî kılınmıştır; zira denge, varoluşun temel Davarıdır.</p>
+    <p class="verse"><span class="verse-number">9.</span> Elun bu düzeni büyük bir hikmetle kurmuştur: ruhu dengeye alan ilahi Davar asla şaşmaz.</p>
+    <p class="verse"><span class="verse-number">10.</span> Adalet, fedakârlık ve merhamet eken ruhlar Deyva’nın yolunu tutar; kin, zulüm ve hıyanet eken ruhlar Angra’nın derinliklerine götürülür.</p>
+    <p class="verse"><span class="verse-number">11.</span> Hakikat terazisi hiçbir zerreyi es geçirmez; her niyetin nuru ya ruhu arındırır ya da kahrını verir.</p>
+    <p class="verse"><span class="verse-number">12.</span> Böylece bu dünyada ekilen her doğru eylem Elun’un ilahi mükâfatını, her günah ve fısk işi de hak ettiği çözülmeyi bulur.</p>
+    <p class="verse"><span class="verse-number">13.</span> Böylece yaşanan her hayatın karşılığı yerini bulur: iyi niyetler ve temiz ameller Deyva’da semereye erer, kötü niyet ve zulüm ise Angra’da hüsrana uğrar.</p>
+    <p class="verse"><span class="verse-number">14.</span> Ruhlar bilir ki selâmet yalnız Deyva’dadır; keder ve pişmanlık ancak Angra’da beklemektedir.</p>
+    <p class="verse"><span class="verse-number">15.</span> Elun’un adaleti gereği her ruh akıbetine göre yargılanır; hakkı seçenler ışığa kavuşur, sapkınlık seçenler çözülmeye gömülür.</p>
+    <p class="verse"><span class="verse-number">16.</span> Sonuç olarak, bu kutsal düzen Elun’un hikmet dolu eseridir; her Davar, O'nun sonsuz bilgeliğini yansıtır.</p>
+    <p class="verse"><span class="verse-number">17.</span> Dünyada nereye yöneldiysen oraya gidersin; her adımın sana bir hal açar.</p>
+    <p class="verse"><span class="verse-number">18.</span> Öyleyse bil ki, hayatta attığın her tutum ve tavır, ölümden sonra ruhunun varacağı hali çizer.</p>
 
     <hr>
 
-    <p class="subtitle">Elun'un altı kitabı burada tamamlanır. Bu bendler, eski zamanların bilgelerinden bize ulaşmıştır.</p>
+    <p class="subtitle">Elun'un altı kitabı burada tamamlanır. Bu Davarlar, eski zamanların bilgelerinden bize ulaşmıştır.</p>
 
 </body>
 </html>
